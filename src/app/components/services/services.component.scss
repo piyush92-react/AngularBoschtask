@@ -1,0 +1,33 @@
+.services{
+  background: rgb(241,235,238);
+  background: linear-gradient(0deg, rgba(241,235,238,0.6404936974789917) 0%, rgba(164,182,213,1) 87%, rgba(155,156,158,1) 100%);
+  .service-content{
+    h1{
+      color: #46267b;
+    }
+  }
+  .service-card{
+    margin-bottom: 35px;
+    .service-card-header{
+      background-color: #8b0157;
+      padding: 10px;
+      color: #fff;
+      .icon-circle{
+        border: 1px solid #fff;
+        border-radius: 100px;
+        width: 22px;
+        height: 22px;
+        line-height: 22px;
+        text-align: center;
+        cursor: pointer;
+        i{
+          font-size: 13px;
+        }
+      }
+    }
+    .subData{
+      padding: 10px;
+      background-color: #fff;
+    }
+  }
+}

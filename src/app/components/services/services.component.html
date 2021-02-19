@@ -1,0 +1,25 @@
+<div class="services py-5">
+  <div class="service-column text-center pb-4">
+    <div class="service-content">
+      <h1>What do we do?</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-lg-4" *ngFor="let item of items;let index = index">
+        <div class="service-card">
+          <img src="{{item.image}}" alt="">
+          <div class="service-card-header d-flex justify-content-between" (click)="showSubItem(index)">
+            <p>{{item.name}}</p>
+            <span class="icon-circle"><i class="fa" [ngClass]="{' fa-plus': !item.isSelect, 'fa-minus': item.isSelect}"></i></span>
+          </div>
+          <div *ngIf="visibleIndex === index" class="subData">
+            <span *ngFor="let subItem of item.items">
+              <p>{{subItem}}</p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="header-nav">
+  <div class="container">
+    <div class="d-flex justify-content-between inner-header">
+      <div class="header-left-area">
+        <a href="#">
+          <img src="assets/images/logo.png" alt="Logo"/>
+        </a>
+      </div>
+      <div class="header-right-area">
+        <ul class="list-unstyled">
+          <li>
+            <i class="fa fa-bell-o"></i><span>9+</span>
+          </li>
+          <li><a class="contact-none" href="javascript:void(0)">Contact Us</a><a class="fa-phone-none" href="javascript:void(0)"><i class="fa fa-phone"></i></a></li>
+          <li><a href="javascript:void(0)">Terms of Use</a></li>
+          <li ngbDropdown>
+            <button class="" id="dropdown" ngbDropdownToggle>Gowrishankar</button>
+            <div ngbDropdownMenu aria-labelledby="dropdown">
+              <button ngbDropdownItem>Profile</button>
+              <button ngbDropdownItem>Setting</button>
+              <button ngbDropdownItem>Log out</button>
+            </div>
+          </li>
+        </ul>
+        <div class="right-title text-right px-3 fs-18">
+          Micro Service Portal
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-nav-list></app-nav-list>

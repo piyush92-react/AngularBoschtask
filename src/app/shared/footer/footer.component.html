@@ -1,0 +1,14 @@
+<div class="main-footer border-top">
+  <footer class="footer pt-2 pb-5 px-5">
+    <div class="footer-d-flex d-flex align-items-center">
+      <div class="copyright">© 2017 Robert Bosch GmbH</div>
+      <div class="nav-footer">
+        <ul class="list-inline mb-0">
+          <li class="nav-item list-inline-item" *ngFor = "let footer of footerList">
+            <a class="nav-link" href="#">{{footer.footerItem}}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
